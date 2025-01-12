@@ -1,0 +1,47 @@
+<!doctype html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>cssreference</title>
+	<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+	
+<video width="320" height="240" controls>
+<source src="video/nature.mp4" type="video/nature.mp4">
+
+</video>
+
+<iframe src="https://frobels.com/" class="frobel"></iframe>
+
+<iframe class="ielts" src="https://www.youtube.com/embed/AJhplp3dct8?si=00ub5oFbyUL6XPYC" title="ieltsbrand7" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
+<h1>The template Element</h1>
+<p>Click the button below to display the hidden content from the template element.</p>
+
+<button onclick="showContent()">Show hidden content</button>
+
+<template>
+  <h2>Flower</h2>
+  <img src="images/flo.jpg" width="214" height="204">
+</template>
+
+<script>
+function showContent() {
+  let temp = document.getElementsByTagName("template")[0];
+  let clon = temp.content.cloneNode(true);
+  document.body.appendChild(clon);
+}
+</script>
+
+
+
+<h1>The footer element</h1>
+
+<footer>
+  <p>Author: Hege Refsnes<br>
+  <a href="mailto:laps2024@gmail.com">laps2024@gmail.com</a></p>
+</footer>
+
+</body>
